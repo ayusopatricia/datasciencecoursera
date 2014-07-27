@@ -69,6 +69,6 @@ run_analysis <- function() {
   dataAvg <- dataTable[, lapply(.SD,mean), by=key(dataTable)]
   
   # Putting the data into a TXT file
-  write.table(data,'~/run_analysis.txt')
+  write.table(dataAvg,'~/run_analysis.txt')
     
 } 
